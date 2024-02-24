@@ -1,0 +1,21 @@
+@import '../../../assets/base/base';
+
+.labelinput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+
+    font-family: $fontSecundaria;
+    font-size: 32px;
+    color: $bg-claro;
+
+    .inputt{
+        width: 178px;
+        height: 28px;
+
+        background-color: $bg-claro;
+        border: none;
+    }
+
+}

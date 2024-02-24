@@ -1,0 +1,14 @@
+@import '../../../assets/base/base';
+
+
+.btn {
+    font-family: $fontPrincipal;
+    font-size: 16px;
+    color: $cor-textos;
+    margin-top: 24px;
+    border-radius: 8px;
+    
+    padding: 6px 8px;
+    border: 1px solid $cor-textos;
+    background: $bg-mais-escuro;
+}
