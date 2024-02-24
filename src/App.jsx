@@ -1,5 +1,6 @@
 import styles from './App.module.scss'
 import Formulario from './components/Formulario/Formulario'
+import ListaItens from './components/ListaItens/ListaItens'
 
 function App() {
 
@@ -10,6 +11,11 @@ function App() {
       </header>
       <section>
         <Formulario/>
+        <ul className={styles.lista}>
+          <ListaItens/>
+          <ListaItens/>
+          <ListaItens/>
+        </ul>
       </section>
 
     </main>
