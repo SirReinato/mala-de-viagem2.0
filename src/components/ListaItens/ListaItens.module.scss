@@ -12,7 +12,7 @@
   background: $bg-itens-li;
   border: 2px solid #000;
   span{
-    width: 57px;
+    min-width: 57px;
     height: 56px;
     display: flex;
     flex-direction: column;
@@ -28,8 +28,8 @@
     }
   }
   .nome{
-    padding-top: 10px;
-    font-family: $fontPrincipal;
+    // padding-top: 10px;
+    font-family: $fontSecundaria;
     font-size: 32px;
     color: $cor-textos;
 
