@@ -1,0 +1,20 @@
+@import '../../assets/base/base';
+
+.footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 0;
+    background: $bg-claro;
+
+    .titulo {
+        padding: 4px;
+        font-family: $fontPrincipal;
+        font-size: 24px;
+        color: #000;
+    }
+
+}
