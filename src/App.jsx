@@ -9,7 +9,6 @@ function App() {
 
   const [novoItem, setNovoIntem] = useState([]);
   
-  console.log(novoItem);
   return (
     <>
       <main className={styles.bgGeral}>
