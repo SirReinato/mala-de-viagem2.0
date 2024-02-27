@@ -1,6 +1,6 @@
 import styles from './LabelInput.module.scss';
 
-const LabelInput = ({nome, placeholder, value,quandoAlterado, foco}) => {
+const LabelInput = ({nome, placeholder, value,quandoAlterado}) => {
 	
 	return (
 		<label className={styles.labelinput}>
@@ -10,7 +10,6 @@ const LabelInput = ({nome, placeholder, value,quandoAlterado, foco}) => {
 					placeholder={placeholder}
 					required
 					value={value}
-					autoFocus={foco}
 					onChange={event => quandoAlterado(event.target.value)}
 				/>
  		</label>
