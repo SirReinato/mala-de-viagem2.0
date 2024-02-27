@@ -24,6 +24,7 @@ const Formulario = ({ porNaLista }) => {
 				<LabelInput 
 					nome={'Item'} 
 					placeholder={'Digite o item'}
+					foco
 					value={item}
 					quandoAlterado={value => setitem(value)}
 				/>
