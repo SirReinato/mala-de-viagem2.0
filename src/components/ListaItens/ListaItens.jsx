@@ -1,11 +1,15 @@
-
+import { TiDeleteOutline } from "react-icons/ti";
 import styles from './ListaItens.module.scss';
 
-const ListaItens = ({quantidade, nome}) => {
+const ListaItens = ({quantidade, item}) => {
 	return (
 		<li className={styles.listaitens}>
- 			<span> <p>3</p> </span>
-			<h3 className={styles.nome}>Fone de ouvido</h3>
+ 			<span> <p>{quantidade}</p> </span>
+			<h3 className={styles.nome}>{item}</h3>
+			<button 
+				className={styles.btnDelete}>
+					<TiDeleteOutline color="#fff" />
+			</button>
  		</li>
 	);
 };
