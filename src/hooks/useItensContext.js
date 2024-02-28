@@ -13,19 +13,26 @@ export const useItensContext = () =>{
 
     const aoSalvar = (event) => {
 		event.preventDefault();
-		setId(id + 1)
-		setitem('')
+		setId(id + 1) //add mais 1 ao id
+
+        //zerar o formulário
 		setQuantidade('')
+		setitem('')
+
+        //tipo e texto da toast
         const sucesso = toast.success('Adicionado com sucesso!');
 		
-		return setOsItens([...osItens, { item, quantidade, id }]), sucesso
+		return (
+            setOsItens([...osItens, { item, quantidade, id }]), 
+            sucesso)
 	}
 
     // Deletar item da lista
     const aoDeletar = (id) =>{
-        return setOsItens(deletarItem =>{
-            deletarItem.filter(deletar => deletar.id !== id)
+        const produto = osItens.filter(item =>{
+            return item.id !== id
         })
+        return setOsItens(produto)
     }
 
 

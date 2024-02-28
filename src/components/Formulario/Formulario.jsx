@@ -20,6 +20,7 @@ const Formulario = () => {
 				<LabelInput
 					nome={'Quantidade'}
 					placeholder={'Digite o quantidade'}
+					type={'number'}
 					value={quantidade}
 					quandoAlterado={value => setQuantidade(value)}
 				/>
