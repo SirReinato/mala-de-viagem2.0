@@ -2,7 +2,9 @@ import styles from './Btn.module.scss';
 
 const Btn = ({nome}) => {
 	return (
-		<button className={styles.btn}>
+		<button 
+			className={styles.btn}
+			>
  			{nome}
  		</button>
 	);
