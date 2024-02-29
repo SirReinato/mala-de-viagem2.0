@@ -1,5 +1,4 @@
 import { useItensContext } from '../../hooks/useItensContext';
-import styles from './InfoModal.module.scss';
 
 const InfoModal = ({ }) => {
 	const {fecharModal} = useItensContext()

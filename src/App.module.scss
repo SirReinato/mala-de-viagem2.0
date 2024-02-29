@@ -18,21 +18,33 @@
 
             color: #eeedeb;
         }
-        button{
+
+        button {
             margin-bottom: 24px;
             font-size: 24px;
             color: #eeedeb;
         }
     }
 
-    section{
+    section {
         display: flex;
         flex-direction: column;
         gap: 32px;
-        .lista{
+
+        .lista {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        /* Versão mobile */
+        @media (max-width: 431px) {
             display: flex;
             flex-direction: column;
             gap: 16px;
         }
+
     }
 }
