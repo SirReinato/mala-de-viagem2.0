@@ -7,11 +7,20 @@
     padding: 16px 0;
     background-color: #503c3c;
 
-    header {
+    .headeer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         .titulo {
             font-size: 40px;
             font-family: $fontPrincipal;
 
+            color: #eeedeb;
+        }
+        button{
+            margin-bottom: 24px;
+            font-size: 24px;
             color: #eeedeb;
         }
     }

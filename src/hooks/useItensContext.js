@@ -11,6 +11,7 @@ export const useItensContext = () =>{
 	const [quantidade, setQuantidade] = useState("");
 	const [id, setId] = useState(0);
 
+    // Função para salvar item na lista
     const aoSalvar = (event) => {
 		event.preventDefault();
 		setId(id + 1) //add mais 1 ao id
@@ -35,6 +36,19 @@ export const useItensContext = () =>{
         return setOsItens(produto)
     }
 
+    //Função para abrir modal
+    const openModal = () =>{
+        const modal = document.querySelector('.modal').classList.add('is-active');
+
+        return modal
+    }
+
+    //Função para fechar a modal
+    const fecharModal = () =>{
+        const modal = document.querySelector('.modal').classList.remove('is-active');
+
+        return modal
+    }
 
 
 
@@ -48,6 +62,8 @@ export const useItensContext = () =>{
         quantidade,
         setQuantidade,
         id,
+        openModal,
+        fecharModal
 
     }
 }
