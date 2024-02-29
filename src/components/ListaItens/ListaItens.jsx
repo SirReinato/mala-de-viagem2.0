@@ -1,6 +1,7 @@
 import { TiDeleteOutline } from "react-icons/ti";
 import styles from './ListaItens.module.scss';
 import { useItensContext } from "../../hooks/useItensContext";
+import BtnIcon from "./BtnIcon/BtnIcon";
 
 const ListaItens = ({quantidade, item, id}) => {
 	const {aoDeletar} = useItensContext()
@@ -9,12 +10,11 @@ const ListaItens = ({quantidade, item, id}) => {
 		<li className={styles.listaitens}>
  			<span> <p>{quantidade}</p> </span>
 			<h3 className={styles.nome}>{item}</h3>
-			<button 
-				className={styles.btnDelete}
-				onClick={item => item == aoDeletar(id)}
+			<BtnIcon 
+				funcao={item => item == aoDeletar(id)}
 				>
 					<TiDeleteOutline color="#fff" />
-			</button>
+			</BtnIcon>
  		</li>
 	);
 };
