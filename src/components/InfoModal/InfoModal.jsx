@@ -28,15 +28,15 @@ const InfoModal = ({ }) => {
 								<nav>
 									<ul>
 										<li>
-											<strong>Oganização</strong>
+											<strong>Oganização: </strong>
 											Crie listas personalizadas para cada viagem, com todos os itens que você precisa levar.
 										</li>
 										<li>
-											<strong>Praticidade</strong>
+											<strong>Praticidade: </strong>
 											Adicione e remova itens facilmente, com a quantidade desejada.
 										</li>
 										<li>
-											<strong>Visualização clara</strong>
+											<strong>Visualização clara: </strong>
 											A lista de itens é organizada de forma clara e concisa, facilitando a visualização.
 										</li>
 									</ul>
@@ -48,11 +48,11 @@ const InfoModal = ({ }) => {
 								<nav>
 									<ul>
 										<li>
-											<strong>Desenvolvida com React.js:</strong>
+											<strong>Desenvolvida com React.js: </strong>
 											Código mais moderno e eficiente, para uma melhor experiência do usuário.
 										</li>
 										<li>
-											<strong>Interface aprimorada:</strong>
+											<strong>Interface aprimorada: </strong>
 											Design mais intuitivo e fácil de usar.
 										</li>
 									</ul>
